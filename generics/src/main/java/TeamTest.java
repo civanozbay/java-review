@@ -13,7 +13,8 @@ public class TeamTest {
 //        Team<String> brokenTeam = new Team<>("this wont work");
 
 
-
+        // we use GENERIC(<T>) because for the team of liverpool we are able to add any player to team. We don't want to mix
+        // the players. If you create a team this team has to only include football,baseball or soccer. !!
 
 //        liverpool.addPlayer(joe);
 //        liverpool.addPlayer(pat);
