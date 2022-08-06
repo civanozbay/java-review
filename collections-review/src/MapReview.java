@@ -27,5 +27,6 @@ public class MapReview {
             if(map.get(ch)==1) return ch;
         }
         return Character.MIN_VALUE;
+
     }
 }
