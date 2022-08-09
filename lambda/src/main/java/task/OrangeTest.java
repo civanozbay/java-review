@@ -24,7 +24,6 @@ public class OrangeTest {
             return "A " + characteristic+ " " + orange.getColor() + " orange";
         };
         prettyPrintApple(inventory,fancyFormatter);
-
     }
     private static void prettyPrintApple(List<Orange> inventory,OrangeFormatter orangeFormatter){
         for(Orange orange : inventory){
