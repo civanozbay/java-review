@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lambda" />
         <module name="oop-review" />
+        <module name="streams" />
       </profile>
     </annotationProcessing>
   </component>
