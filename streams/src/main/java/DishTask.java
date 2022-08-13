@@ -1,3 +1,5 @@
+import static java.util.Comparator.comparing;
+
 public class DishTask {
     public static void main(String[] args) {
         System.out.println("--------------------------------------------");
@@ -15,17 +17,20 @@ public class DishTask {
                 .map(Dish::getName)
                 .map(String::length)
                 .forEach(System.out::println);
+        System.out.println("--------------------------------------------");
         // print three high caloric dish name(>300)
         DishData.getAll().stream()
-                .filter(i -> i.getCalories()>300)
+                .filter(dish -> dish.getCalories()>300)
                 .limit(3)
                 .map(Dish::getName)
                 .forEach(System.out::println);
-
+        System.out.println("--------------------------------------------");
         //print all dish name that are below 400 calories in sorted
         DishData.getAll().stream()
-                .filter(i -> i.getCalories()<400)
+                .filter(dish -> dish.getCalories()<400)
+                .sorted(comparing(Dish::getCalories).reversed()) // and also when we add the reversed method it changes
                 .map(Dish::getName)
-                .sorted()
+                .forEach(System.out::println);
+
     }
 }
