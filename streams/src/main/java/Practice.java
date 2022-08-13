@@ -22,15 +22,7 @@ public class Practice {
                 new Dish("salmon",false,450,Type.MEAT)
                 );
         System.out.println("--------------------------------------------");
-        // print all dish's name that has less than 400 calories
-        menu.stream()
-                .filter(i -> i.getCalories()>400)
-                .forEach(k-> System.out.println(k.getName()));
-        System.out.println("--------------------------------------------");
-        // print the length of the name of each dish
-        menu.stream()
-                .map(i -> i.getName().length())
-                .forEach(System.out::println);
+
     }
 
 }
