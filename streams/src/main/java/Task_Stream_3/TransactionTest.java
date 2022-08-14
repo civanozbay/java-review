@@ -58,7 +58,7 @@ public class TransactionTest {
         System.out.println("*******Task-7*********");
         Optional<Integer> high = TransactionData.getAll().stream()
                 .map(transaction -> transaction.getValue())
-                .reduce(Integer::max); // since we dont declare the initial value we assign to optinal
+                .reduce(Integer::max); // since we don't declare the initial value we assign to optinal
         System.out.println(high);
 
         //8-Find the  transaction with the smallest value
